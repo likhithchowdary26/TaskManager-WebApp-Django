@@ -122,7 +122,9 @@ LOGIN_URL = 'login'
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = "/abcd/"
+MEDIA_ROOT = BASE_DIR
+
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
